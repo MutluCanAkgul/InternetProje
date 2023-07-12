@@ -1,0 +1,15 @@
+
+
+.row{
+    padding: 2% 2% 2% 2%;
+}
+.space{
+    margin-left: 100px;
+}
+.span nav{
+    padding: 2% 2% 2% 2%;
+}
+.navbar-text{
+    font-size: 20px;
+    font-weight: 400;
+}

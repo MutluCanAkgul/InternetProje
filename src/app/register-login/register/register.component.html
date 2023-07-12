@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+             <div class="text-center">
+                <h2>Kayıt OL</h2>
+               
+             </div>
+             <form [formGroup]="registerForm" (ngSubmit)="kayitOl()">
+                <div class="mb-3">
+                  <label for="name" class="form-label">İsim:</label>
+                  <input type="text" formControlName="name" class="form-control" id="name"  required aria-describedby="name">
+                </div>
+                <span style="color: red;" *ngIf="name && name.invalid && name.touched">
+                Bu alandaki bilgiler boş veya kabul edilemez
+                </span>
+                <div class="mb-3">
+                  <label for="surname" class="form-label">Soyisim:</label>
+                  <input type="surname" formControlName="surname" class="form-control" id="surname" required >
+                </div>
+                <span style="color: red;" *ngIf="surname && surname.invalid && surname.touched">
+                  Bu alandaki bilgiler boş veya kabul edilemez
+                  </span>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-Posta:</label>
+                    <input type="email" formControlName="email" class="form-control" id="email"  required>
+                  </div>
+                  <span style="color: red;" *ngIf="email && email.invalid && email.touched">
+                    Bu alandaki bilgiler boş veya kabul edilemez
+                    </span>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Şifre:</label>
+                    <input type="password" formControlName="password" class="form-control" id="password"  required>
+                  </div>
+                  <span style="color: red;" *ngIf="password && password.invalid && password.touched">
+                    Bu alandaki bilgiler boş veya kabul edilemez
+                    </span>
+                <br>
+                <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+              </form>
+              Daha önceden hesabınız var mı? <a routerLink="/giris">Giris Yap</a>
+        </div>
+    
+    
+    </div>
+    </div>
+    </div>

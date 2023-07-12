@@ -1,0 +1,28 @@
+<div class="container">
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+         <div class="text-center">
+            <h2>Giriş Yap</h2>
+           
+         </div>
+         <form [formGroup]="loginForm" (ngSubmit)="girisYap()">
+            <div class="mb-3">
+              <label for="email" class="form-label">E-Posta Adresi</label>
+              <input type="email" formControlName="email" class="form-control" id="email" required >
+              
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Şifre</label>
+              <input type="password" formControlName="password" class="form-control" id="password" required >
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Giriş Yap</button>
+          </form>
+          Daha önceden hesap oluşturmadınız mı? <a routerLink="/kayit">Kayıt Ol</a>
+    </div>
+
+
+</div>
+</div>
+</div>

@@ -1,0 +1,21 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.secili{
+    color: black;
+    font-weight: 600;
+}
+.iconlar a{
+    text-decoration: none;
+    color: black;
+}
+.iconlar{
+    margin-right: 10px;
+    font-size: 25px;
+    
+}
+.yazi{
+    font-size: 15px;
+    margin-right: 15px;
+}
